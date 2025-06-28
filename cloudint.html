@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LordCloud - Rust Server Hosting</title>
+  <link rel="stylesheet" href="CSS/cloudint.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="logo-img"><img src="Images/cloud_images/logoLC.jpg" alt=""></div>
+      <div class="logo-text">LordCloud</div>
+    </div>
+    <div class="nav-links">
+      <div><a href="">Home</a></div>
+      <div><a href="">Store</a></div>
+      <div class="dropdown"><a href="">Announcements</a></div>
+      <div class="dropdown"><a href="">Knowledgebase</a></div>
+      <div><a href="">Network Status</a></div>
+      <div class="dropdown"><a href="">Contact Us</a></div>
+    </div>
+    <div class="header-right">
+      <div class="cart">View Cart</div>
+      <div class="client-area">Client Area</div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+        <div class="menu-toggle" onclick="toggleMenu()">✕</div>
+    </div>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li class="dropdown-toggle" onclick="toggleDropdown()">Store ▼</li>
+      <ul class="dropdown-list">
+        <li><a href="">Budget Game Plan</a></li>
+        <li><a href="">Performance Game Plan</a></li>
+        <li><a href="">Budget Plan VPS</a></li>
+        <li><a href="">High-Performance VPS</a></li>
+        <li><a href="">Ryzen VPS India</a></li>
+        <li><a href="">Website & cPanel</a></li>
+        <li><a href="">Discord Bot Hosting</a></li>
+        <li><a href="">Register a New Domain</a></li>
+        <li><a href="">Transfer Domains to Us</a></li>
+      </ul>
+      <li ><a href="">Announcements</a></li>
+      <li><a href="">Knowledgebase</a></li>
+      <li><a href="">Network Status</a></li>
+      <li><a href="">Contact Us</a></li>
+    </ul>
+    <div class="mobile-buttons">
+      <div class="cart"><a href="">View Cart</a></div>
+      <div class="client-area"><a href="">Client Area</a></div>
+    </div>
+  </div>
+
+  <div class="main-section">
+    <div class="background" id="bgImage"></div>
+    <div class="overlayx"></div>
+    <div class="overlayy"></div>
+    <div class="left-content">
+      <div class="tag">Unlimited Slots, Storage, and Bandwidth</div>
+      <div class="title">Rust <br> Server Hosting</div>
+      <div class="details">
+        <div class="price">Starts at <span>$9.99</span></div>
+        <div class="vline"></div>
+        <div class="desc">Try to survive, build huge bases, and join forces with fellow players to fend off relentless raids in the cruel world of Rust.</div>
+      </div>
+      
+      <button class="start-button">Start Now</button>
+    </div>
+    <img src="Images/cloud_images/mine.png" alt="Rust Character" class="right-image">
+  </div>
+
+  <div class="bottom-tabs">
+    <div class="tab active"><span>Minecraft</span></div>
+    <div class="tab"><span>Rust</span></div>
+    <div class="tab"><span>Palworld</span></div>
+    <div class="tab"><span>Valheim</span></div>
+    <div class="tab"><span>Terraria</span></div>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll(".tab");
+    const bgImage = document.querySelector("#bgImage");
+    const title = document.querySelector(".title");
+    const desc = document.querySelector(".desc");
+
+    const data = [
+        { 
+            name: "Minecraft", 
+            desc: "Create, explore, and survive alone or with friends in Minecraft.", 
+            img: "Images/cloud_images/minecraft.jpg" 
+        },
+        { 
+            name: "Rust", 
+            desc: "Try to survive, build huge bases, and join forces with fellow players to fend off relentless raids in Rust.", 
+            img: "Images/cloud_images/bg.png" 
+        },
+        { 
+            name: "Palworld", 
+            desc: "Tame and train creatures in a world full of action, crafting, and battles.", 
+            img: "Images/cloud_images/images_7.jpg" 
+        },
+        { 
+            name: "Valheim", 
+            desc: "Survive and thrive in a brutal Viking afterlife full of monsters and myth.", 
+            img: "Images/cloud_images/gtav.jpg" 
+        },
+        { 
+            name: "Terraria", 
+            desc: "Dig, fight, build, and explore in this action-packed adventure sandbox.", 
+            img: "Images/cloud_images/images_8.jpg" 
+        }
+    ];
+
+    let current = 1;
+
+    function activateTab(i) {
+        tabs.forEach(tab => tab.classList.remove("active"));
+        tabs[i].classList.add("active");
+
+        title.innerHTML = `${data[i].name} <br> Server Hosting`;
+        desc.textContent = data[i].desc;
+        bgImage.style.backgroundImage = `url('${data[i].img}')`;
+
+        // Restart animation on title
+        title.classList.remove("animate");
+        void title.offsetWidth; // force reflow
+        title.classList.add("animate");
+
+        // Restart animation on price
+        const price = document.querySelector(".price");
+        price.classList.remove("animate");
+        void price.offsetWidth; // force reflow
+        price.classList.add("animate");
+
+        // Restart animation on desc
+        desc.classList.remove("animate");
+        void desc.offsetWidth; // force reflow
+        desc.classList.add("animate");
+
+        // Restart animation on tag
+        const tag = document.querySelector(".tag");
+        tag.classList.remove("animate");
+        void tag.offsetWidth; // force reflow
+        tag.classList.add("animate");
+
+        // Restart animation on start button
+        const startButton = document.querySelector(".start-button");
+        startButton.classList.remove("animate");
+        void startButton.offsetWidth; // force reflow
+        startButton.classList.add("animate");
+
+        // Restart animation on vline
+        const vline = document.querySelector(".vline");
+        vline.classList.remove("animate");
+        void vline.offsetWidth; // force reflow
+        vline.classList.add("animate");
+    }
+
+
+    tabs.forEach((tab, i) => {
+      tab.addEventListener("click", () => {
+        current = i;
+        activateTab(i);
+      });
+    });
+
+    setInterval(() => {
+      current = (current + 1) % tabs.length;
+      activateTab(current);
+    }, 5000);
+
+    activateTab(current);
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('active');
+    }
+
+    function toggleDropdown() {
+        const dropdown = document.querySelector(".dropdown-list");
+        const dropdownToggle = document.querySelector(".dropdown-toggle");
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        dropdownToggle.textContent = dropdown.style.display === "block" ? "Store ▲" : "Store ▼";
+    }
+  </script>
+  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br>
+</body>
+</html>
