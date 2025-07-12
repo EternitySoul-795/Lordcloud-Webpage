@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LordCloud</title>
+  <link rel="icon" type="image/png" href="Images/cloud_images/logoLC.png">
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/animation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/bvi6iha.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Body background -->
+  <div class="gaming-background"></div>
+
+  <!-- ---------------- -->
+  <header>
+    <div class="logo">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="logo-img"><a href=""><img src="Images/cloud_images/logoLC.png" alt=""></a></div>
+      <div class="logo-text"><a href="">LordCloud</a></div>
+    </div>
+    <div class="nav-links">
+      <div><a href="">Game Hosting</a></div>
+      <div><a href="">Discord Bot Hosting</a></div>
+      <div class="dropdownbtn store-toggle" onclick="toggleDropdown('#dropdownpanel2')">Domains <span id="dropdown-arrow">▼</span>
+        <div class="dropdown-panel" id="dropdownpanel2">
+          <a href=""><span class="small-icons fas fa-globe"></span>Register a New Domain</a>
+          <a href=""><span class="small-icons fas fa-arrow-right-arrow-left"></span>Transfer Domains to Us</a>
+          <a href="" class="dropdown-footer"><span class="small-icons fas fa-money-check-dollar"></span>Domain Pricing</a>
+        </div>
+      </div>
+      <div class="dropdownbtn store-toggle" onclick="toggleDropdown('#dropdownpanel3')">Other Servers <span id="dropdown-arrow">▼</span>
+        <div class="dropdown-panel" id="dropdownpanel3">
+          <a href=""><span class="small-icons fas fa-satellite"></span>VPS Hosting</a>
+          <a href=""><span class="small-icons fas fa-server"></span>Dedicated Server Hosting</a>
+          <a href=""><span class="small-icons fas fas fa-laptop"></span>Web Hosting</a>
+        </div>
+      </div>
+      <div><a href=""><span class="small-icons fas fa-comments"></span>Contact Us</a></div>
+    </div>
+
+    <div class="header-right">
+      <div class="cart"><span class="small-icons fas fa-cart-shopping"></span>View Cart</div>
+      <div class="client-area">Client Area</div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+          <button class="menu-toggle" onclick="toggleMenu()">✕</button>
+      </div>
+      <ul>
+        <li ><a href="">Home</a></li>
+        <li ><a href="">Game Hosting</a></li>
+        <li ><a href="">Discord Bot Hosting</a></li>
+        <li><div class="dropdown-toggle" onclick="toggleDropdown('#dropdown-list1')">Domains<span id="dropdown-arrow">▼</span></div></li>
+        <ul class="dropdown-list" id="dropdown-list1">
+          <li><a href=""><span class="small-icons fas fa-globe"></span>Register a New Domain</a></li>
+          <li><a href=""><span class="small-icons fas fa-arrow-right-arrow-left"></span>Transfer Domains to Us</a></li>
+          <li><a href=""><span class="small-icons fas fa-money-check-dollar"></span>Domain Pricing</a></li>
+        </ul>
+        
+
+        <li><div class="dropdown-toggle" onclick="toggleDropdown('#dropdown-list2')">Other Servers<span id="dropdown-arrow">▼</span></div></li>
+        <ul class="dropdown-list" id="dropdown-list2">
+          <li><a href=""><span class="small-icons fas fa-satellite"></span>VPS Hosting</a></li>
+          <li><a href=""><span class="small-icons fas fa-server"></span>Dedicated Server Hosting</a></li>
+          <li><a href=""><span class="small-icons fas fas fa-laptop"></span>Web Hosting</a></li>
+        </ul>
+        <li class="dropdown-toggle">Contact Us</li>
+      </ul>
+      <div class="mobile-buttons">
+        <div class="cart"><a href=""><span class="small-icons fas fa-cart-shopping"></span>View Cart</a></div>
+        <div class="client-area"><a href="">Client Area</a></div>
+      </div>
+    </div>
+  </header>
+
+<!-- Main Section -->
+
+  <div class="main-section">
+    <div class="background" id="bgImage"></div>
+    <div class="overlayx"></div>
+    <div class="overlayy"></div>
+    <div class="left-content">
+      <div class="tag">Unlimited Slots, Storage, and Bandwidth</div>
+      <div>
+        <h1 class="animated-title" data-text="minecraft">
+          <span class="hover-text">Minecraft</span>
+          <div class="btext">Minecraft</div>
+        </h1>
+        <h1 class="title">Server Hosting</h1>
+      </div><br>
+      <div class="details">
+        <div class="price">Starts at <span>$9.99</span></div>
+        <div class="vline"></div>
+        <div class="desc">Try to survive, build huge bases, and join forces with fellow players to fend off relentless raids in the cruel world of Rust.</div>
+      </div>
+      
+      <button class="start-btn1">
+        <h1>Start Now</h1>
+        <div class="star-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="star-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="star-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="star-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="star-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="star-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </button>
+
+    </div>
+    
+    <div class="bottom-tabs">
+      <div class="tab active"><span>Minecraft</span></div>
+      <div class="tab"><span>Rust</span></div>
+      <div class="tab"><span>Palworld</span></div>
+      <div class="tab"><span>Valheim</span></div>
+      <div class="tab"><span>Terraria</span></div>
+    </div>
+  </div>
+
+  
+
+
+
+  <!-- Main-Body ================================================================================================ -->
+  
+  <div class="main-body">
+    <section class="section5">
+      <div class="heading-sec5">
+        <h1>Most Popular Games</h1>
+      <p>Our game server hosting lineup is comprised of the most popular hosting platforms.</p>
+      </div>
+      <div class="carousel-container">
+        <button class="arrow left" onclick="moveCarousel(-1)">&#10094;</button>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="carousel-track">
+            <!-- Cards -->
+            
+            <div class="card-sec5">
+              <div class="parent">
+                <div class="parent-overlay"></div>
+                <div class="card2 card_box"><span class="prm"></span>
+                  <h2 class="card-heading"><img src="Images/cloud_images/logoLC.png" alt="">SERVERS</h2>
+                    <div class="content-box" style="background-image: url('Images/cloud_images/minecraft.png');">
+                        <div class="card-overlayx"></div>
+                        <div class="card-overlayy"></div>  
+                        <span class="card-title">Minecraft<span> Server</span></span>
+                        <p class="card-content">
+                            Starting at <br><span>$9.00 / monthly</span> 
+                        </p>
+                        <span class="see-more">Learn More</span>
+                    </div>
+                    <div class="date-box">
+                        <span class="month"><img src="Images/cloud_images/mine.png" style="width: 90px; height: auto;" alt=""></span>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-sec5">
+              <div class="parent">
+                <div class="parent-overlay"></div>
+                <div class="card2">
+                  <h2 class="card-heading"><img src="Images/cloud_images/logoLC.png" alt="">SERVERS</h2>
+                    <div class="content-box" style="background-image: url('Images/cloud_images/gtav.jpg'); background-position: center;">
+                        <div class="card-overlayx"></div>
+                        <div class="card-overlayy"></div>  
+                        <span class="card-title">GTA V<span> Server</span></span>
+                        <p class="card-content">
+                            Starting at <br><span>$9.00 / monthly</span> 
+                        </p>
+                        <span class="see-more">Learn More</span>
+                    </div>
+                    <div class="date-box">
+                        <span class="month"><img src="Images/cloud_images/gtav_tr2.png" alt=""></span>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-sec5">
+              <div class="parent">
+                <div class="parent-overlay"></div>
+                <div class="card2">
+                  <h2 class="card-heading"><img src="Images/cloud_images/logoLC.png" alt="">SERVERS</h2>
+                    <div class="content-box" style="background-image: url('Images/cloud_images/rust.png'); background-position: center;">
+                        <div class="card-overlayx"></div>
+                        <div class="card-overlayy"></div>  
+                        <span class="card-title">Rust<span> Server</span></span>
+                        <p class="card-content">
+                            Starting at <br><span>$9.00 / monthly</span> 
+                        </p>
+                        <span class="see-more">Learn More</span>
+                    </div>
+                    <div class="date-box">
+                        <span class="month"><img src="Images/cloud_images/rust_tr.png" style="width: 100px; height: auto;" alt=""></span>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-sec5">
+              <div class="parent">
+                <div class="parent-overlay"></div>
+                <div class="card2">
+                  <h2 class="card-heading"><img src="Images/cloud_images/logoLC.png" alt="">SERVERS</h2>
+                    <div class="content-box" style="background-image: url('Images/cloud_images/terraria.jpg');">
+                        <div class="card-overlayx"></div>
+                        <div class="card-overlayy"></div>  
+                        <span class="card-title">Terraria<span> Server</span></span>
+                        <p class="card-content">
+                            Starting at <br><span>$9.00 / monthly</span> 
+                        </p>
+                        <span class="see-more">Learn More</span>
+                    </div>
+                    <div class="date-box">
+                        <span class="month"><img src="Images/cloud_images/terraria_tr.png" alt=""></span>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-sec5">
+              <div class="parent">
+                <div class="parent-overlay"></div>
+                <div class="card2">
+                  <h2 class="card-heading"><img src="Images/cloud_images/logoLC.png" alt="">SERVERS</h2>
+                    <div class="content-box" style="background-image: url('Images/cloud_images/Palworld.jpg'); background-position: center;">
+                        <div class="card-overlayx"></div>
+                        <div class="card-overlayy"></div>  
+                        <span class="card-title">Palworld<span> Server</span></span>
+                        <p class="card-content">
+                            Starting at <br><span>$9.00 / monthly</span> 
+                        </p>
+                        <span class="see-more">Learn More</span>
+                    </div>
+                    <div class="date-box">
+                        <span class="month"><img src="Images/cloud_images/parlworld_tr.png" style="width: 90px; height: auto;" alt=""></span>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+
+        <button class="arrow right" onclick="moveCarousel(1)">&#10095;</button>
+      </div>
+    </section>
+  </div>
+
+  
+  
+
+  <section class="section2">
+    <div class="container">
+      <h2 class="heading">Why <span class="highlight">LordCloud Hosting</span><span class="white">?</span></h2>
+      <p class="subheading">See some of the reasons you should choose us over competitors</p>
+
+      <div class="grid">
+        <div class="feature f1">
+          <div class="sec2-icon fas fa-server"></div>
+          <h3>FTP ACCESS</h3>
+          <p>Access all your files with your FTP client to make managing your plugins and server files easy.</p>
+          <div class="transfer-container">
+            <div class="device device-left">Client</div>
+            <div class="file"></div>
+            <div class="device device-right">Server</div>
+          </div>
+        </div>
+
+        <div class="feature f2">
+          <div class="sec2-icon fas fa-shield-alt"></div>
+          <h3>DDOS PROTECTION</h3>
+          <p>Your server stays protected with advanced DDoS mitigation that activates instantly during attacks, ensuring uninterrupted performance and gameplay.</p>
+        </div>
+
+        <div class="feature f3">
+          <div class="sec2-icon fas fa-microchip"></div>
+          <h3>I9 INTEL PROCESSOR</h3>
+          <p>Our servers are powered by latest and cutting edge Intel Xeon processors.</p>
+          <div class="gear-container">
+            <div class="gearbox">
+              <div class="overlay"></div>
+                <div class="gear one">
+                  <div class="gear-inner">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                </div>
+                <div class="gear two">
+                  <div class="gear-inner">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                </div>
+                <div class="gear three">
+                  <div class="gear-inner">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                </div>
+                <div class="gear four large">
+                  <div class="gear-inner">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="feature f4">
+          <div class="sec2-icon fas fa-clock"></div>
+          <h3>INSTANT SETUP</h3>
+          <p>Enjoy instant setup for most of our services, get going immediately after paying.</p>
+        </div>
+
+        <div class="feature f5">
+          <div class="sec2-icon fas fa-gamepad"></div>
+          <h3>GAME SERVERS</h3>
+          <p>We offer three high-performance Game Servers, built for a smooth and reliable experience. With our custom Game Panel, you can easily manage your server, install mods, and make real-time changes. Enjoy full control whether you're hosting Minecraft, GTA, or other supported games.</p>
+        </div>
+
+        <div class="feature f6">
+          <div class="sec2-icon fas fa-headset"></div>
+          <h3>SUPPORT 24/7</h3>
+          <p>Have an issue or concern? Open a support ticket with us anytime and get a quick response.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+  <!-- ---------------- Trustpilot Section --------------------------------------------------- -->
+  
+  <div class="trustpilot-section">
+    <div class="container-tp">
+      <div class="content-tp">
+        <h1>Why Gamers Trust Us with Excellence</h1>
+        <p>We deliver cutting-edge game servers, lightning-fast support, unbeatable uptime, and exceptional value. But don’t just take our word for it — hear it straight from the players who power our reputation.</p>
+      </div>
+      <div class="book">
+        <!-- Review content inside the book -->
+        <a class="tp-link w-full h-full" href="#">
+          <div class="w-full h-full bg-[#1e1e1e] rounded-lg border border-[#2a2a2a] p-4 z-0">
+            <!-- External link icon top-right -->
+            <img src="Images/cloud_images/ext-link-white-icon.png" alt="external link" class="absolute top-5 right-5 w-10 h-10 opacity-90" />
+            <div class="flex items-center gap-4">
+              <div class="text-4xl font-bold text-white">4.6</div>
+              <div>
+                <p class="text-base font-semibold text-white">Excellent</p>
+                <div class="flex space-x-1 mt-1">
+                  <!-- 4 full stars -->
+                  <div class="bg-[#00b67a] w-5 h-5 flex items-center justify-center">
+                    <svg viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.88 6.225H16l-4.929 3.504-3.047 2.149-4.953 3.504L4.952 9.73 0 6.225h6.119L8 .572l1.881 5.653Zm1.596 4.812L8 11.9l4.929 3.527-1.453-4.392Z" />
+                    </svg>
+                  </div>
+                  <div class="bg-[#00b67a] w-5 h-5 flex items-center justify-center">
+                    <svg viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.88 6.225H16l-4.929 3.504-3.047 2.149-4.953 3.504L4.952 9.73 0 6.225h6.119L8 .572l1.881 5.653Zm1.596 4.812L8 11.9l4.929 3.527-1.453-4.392Z" />
+                    </svg>
+                  </div>
+                  <div class="bg-[#00b67a] w-5 h-5 flex items-center justify-center">
+                    <svg viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.88 6.225H16l-4.929 3.504-3.047 2.149-4.953 3.504L4.952 9.73 0 6.225h6.119L8 .572l1.881 5.653Zm1.596 4.812L8 11.9l4.929 3.527-1.453-4.392Z" />
+                    </svg>
+                  </div>
+                  <div class="bg-[#00b67a] w-5 h-5 flex items-center justify-center">
+                    <svg viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.88 6.225H16l-4.929 3.504-3.047 2.149-4.953 3.504L4.952 9.73 0 6.225h6.119L8 .572l1.881 5.653Zm1.596 4.812L8 11.9l4.929 3.527-1.453-4.392Z" />
+                    </svg>
+                  </div>
+                  <!-- Half star -->
+                  <div class="w-5 h-5 relative flex items-center justify-center bg-gray-600 overflow-hidden">
+                    <div class="absolute inset-0 half-bg"></div>
+                    <svg viewBox="0 0 16 16" fill="white" class="relative z-0" xmlns="http://www.w3.org/2000/svg" width="14"
+                      height="14">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.88 6.225H16l-4.929 3.504-3.047 2.149-4.953 3.504L4.952 9.73 0 6.225h6.119L8 .572l1.881 5.653Zm1.596 4.812L8 11.9l4.929 3.527-1.453-4.392Z" />
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-400 mt-1">50 reviews</p>
+              </div>
+            </div>
+
+            <!-- Ratings breakdown -->
+            <div class="mt-4 space-y-1 text-xs text-gray-300">
+              <div class="flex items-center">
+                <span class="w-14">5-star</span>
+                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden ml-2">
+                  <div class="bg-[#00b67a] h-full w-[90%]"></div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span class="w-14">4-star</span>
+                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden ml-2">
+                  <div class="bg-green-400 h-full w-[1%]"></div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span class="w-14">3-star</span>
+                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden ml-2">
+                  <div class="bg-yellow-400 h-full w-[1%]"></div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span class="w-14">2-star</span>
+                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden ml-2">
+                  <div class="bg-orange-400 h-full w-[1%]"></div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span class="w-14">1-star</span>
+                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden ml-2">
+                  <div class="bg-red-500 h-full w-[1%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Book cover -->
+        <div class="cover">
+          <img src="Images/cloud_images/LC_Trustpilot.jpg" alt="Cover" style="background-size: cover;"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <!--  section3 =============================================== -->
+
+  <section class="features-section" style="background-image: url(Images/cloud_images/abstract2.png);">
+    <div class="container">
+      <h2 class="title">Some Good Reasons to Choose <br><span>LordCloud Hosting</span></h2>
+
+      <!-- Feature 1 -->
+      <div class="feature-row">
+        <div class="text" style="text-align: left;">
+          <h3>Access Your Data <br><span>Anywhere, Anytime</span></h3>
+          <p>
+            You have unrestricted access to your data and services at all times. 
+            Whether you're working from a different location or collaborating with a global team, you can freely access, update, and manage your files, folders, databases, and other resources from anywhere in the world, at any time
+          </p>
+        </div>
+        <div class="image img1">
+          <img class="loc-img" src="Images/cloud_images/worldmap.png" alt="Data Center Map">
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-row reverse">
+        <div class="image img2">
+          <img src="Images/cloud_images/fast-server.png" alt="Speed Illustration">
+        </div>
+        <div class="text" style="text-align: right;">
+          <h3>Lighting Fast <br><span>Loading Speed</span></h3>
+          <p>
+            Speed is one of the most basic but powerful features that you will get instantly with your Cloud VPS hosting package.
+            A fast loading website ensures that your competitors are not able to snatch your potential customers.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+  <!-- section4 =============================================== -->
+
+  <section class="discord-section">
+    <div class="discord-card">
+      <div class="discord-left">
+        <h2>Join Our<br><span>Discord Server</span></h2><br>
+        <!-- <a href="#" class="discord-btn">Join Now</a> -->
+        <a href="https://discord.com" target="_blank"><button class="button">
+          <div class="outline"></div>
+          <div class="state state--default">
+            <div class="icon">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g style="filter: url(#shadow)">
+                  <path
+                    d="M14.2199 21.63C13.0399 21.63 11.3699 20.8 10.0499 16.83L9.32988 14.67L7.16988 13.95C3.20988 12.63 2.37988 10.96 2.37988 9.78001C2.37988 8.61001 3.20988 6.93001 7.16988 5.60001L15.6599 2.77001C17.7799 2.06001 19.5499 2.27001 20.6399 3.35001C21.7299 4.43001 21.9399 6.21001 21.2299 8.33001L18.3999 16.82C17.0699 20.8 15.3999 21.63 14.2199 21.63ZM7.63988 7.03001C4.85988 7.96001 3.86988 9.06001 3.86988 9.78001C3.86988 10.5 4.85988 11.6 7.63988 12.52L10.1599 13.36C10.3799 13.43 10.5599 13.61 10.6299 13.83L11.4699 16.35C12.3899 19.13 13.4999 20.12 14.2199 20.12C14.9399 20.12 16.0399 19.13 16.9699 16.35L19.7999 7.86001C20.3099 6.32001 20.2199 5.06001 19.5699 4.41001C18.9199 3.76001 17.6599 3.68001 16.1299 4.19001L7.63988 7.03001Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M10.11 14.4C9.92005 14.4 9.73005 14.33 9.58005 14.18C9.29005 13.89 9.29005 13.41 9.58005 13.12L13.16 9.53C13.45 9.24 13.93 9.24 14.22 9.53C14.51 9.82 14.51 10.3 14.22 10.59L10.64 14.18C10.5 14.33 10.3 14.4 10.11 14.4Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <filter id="shadow">
+                    <fedropshadow
+                      dx="0"
+                      dy="1"
+                      stdDeviation="0.6"
+                      flood-opacity="0.5"
+                    ></fedropshadow>
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+            <p>
+              <span style="--i:0">J</span>
+              <span style="--i:1">o</span>
+              <span style="--i:2">i</span>
+              <span style="--i:3">n</span>
+              <span style="--i:4">N</span>
+              <span style="--i:5">o</span>
+              <span style="--i:6">w</span>
+              
+            </p>
+          </div>
+          <div class="state state--sent">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                height="1em"
+                width="1em"
+                stroke-width="0.5px"
+                stroke="black"
+              >
+                <g style="filter: url(#shadow)">
+                  <path
+                    fill="currentColor"
+                    d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <p>
+              <span style="--i:5">J</span>
+              <span style="--i:6">o</span>
+              <span style="--i:7">i</span>
+              <span style="--i:8">n</span>
+              <span style="--i:5">e</span>
+              <span style="--i:6">d</span>
+            </p>
+          </div>
+        </button></a>
+      </div>
+      <div class="discord-right">
+        <img src="Images/cloud_images/discord.gif" alt="Discord Preview" />
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- section5 ============================================= -->
+  
+  
+
+
+  <!-- section6 ============================================= -->
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</span></h2>
+    <div class="faq-container">
+      <div class="faq" onclick="toggleFaq()">
+        <div class="faq-question">What Hardware do You Use on Your Game servers?<span class="icon">+</span></div>
+        <div class="faq-answer">We use powerful hardware including AMD Ryzen and Intel Xeon processors with NVMe SSDs for high-speed performance.</div>
+      </div>
+      <div class="faq" onclick="toggleFaq()">
+        <div class="faq-question">Can I Upgrade my server After I Have Purchased?<span class="icon">+</span></div>
+        <div class="faq-answer">Yes, you can upgrade your server at any time without disruption. Simply log into your client area, select the upgrade option,
+          and choose the plan that best suits your needs. The upgrade costs are calculated on a pro rata basis.
+        </div>
+      </div>
+      <div class="faq" onclick="toggleFaq()">
+        <div class="faq-question">How Long Does it Take For my server to be Set up?<span class="icon">+</span></div>
+        <div class="faq-answer">Our game servers are deployed instantly once payment is confirmed.</div>
+      </div>
+      <div class="faq" onclick="toggleFaq()">
+        <div class="faq-question">How do I Access my Product?<span class="icon">+</span></div>
+        <div class="faq-answer">You can access your product directly from our client portal using your login credentials.</div>
+      </div>
+      <div class="faq" onclick="toggleFaq()">
+        <div class="faq-question">Do Your servers Run 24/7?<span class="icon">+</span></div>
+        <div class="faq-answer">Yes, our servers run 24/7 with 99.9% uptime guarantee for uninterrupted performance.</div>
+      </div>
+      <div class="faq" onclick="toggleFaq()">
+        <div class="faq-question">Will LordCloud Support New Games?<span class="icon">+</span></div>
+        <div class="faq-answer">Yes! We regularly add support for new games based on community requests.</div>
+      </div>
+      <div class="faq" onclick="toggleFaq()">
+        <div class="faq-question">Can I Backup my server?<span class="icon">+</span></div>
+        <div class="faq-answer">Yes, you can backup and restore your server anytime using our control panel tools.</div>
+      </div>
+    </div>
+    <script src="faq.js"></script>
+  </section>
+
+  <!-- F O O T E R ============================================= -->
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-head">
+          <div class="f-logo">
+            <img src="templates/{$template}/images/logoLC.jpg" alt="LordCloud" class="f-logo" />
+            <h2>LordCloud</h2>
+          </div>
+          <div class="social">
+            <p>Get in touch with us</p>
+            <div class="f-icons">
+              <a href="#"><i class="ic1 fab fa-instagram"></i></a>
+              <a href="#"><i class="ic2 fab fa-discord"></i></a>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        <div class="footer-cards">
+          <div class="cardf purple">Rated Excellent<br>On Trustpilot</div>
+          <div class="cardf green">Indian Server<br>Hosting</div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="link-column">
+          <h4>Premium Hosting</h4>
+          <ul>
+            <li><a href="#">High performance VPS Hosting</a></li>
+            <li><a href="#">Premium Game Hosting</a></li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <h4>Domains</h4>
+          <ul>
+            <li><a href="#">Register a Domain</a></li>
+            <li><a href="#">Transfer a Domain</a></li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <h4>Discord Bot Hosting</h4>
+          <ul>
+            <li><a href="#">Discord Bot Hosting</a></li>
+            <li><a href="#">Join Our Discord Server</a></li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <h4>Plans</h4>
+          <ul>
+            <li><a href="#">Budget Game Plan</a></li>
+            <li><a href="#">Performance Game PLan</a></li>
+            <li><a href="#">Budget Plan Vps</a></li>
+            <li><a href="#">High-Performance Vps</a></li>
+            <li><a href="#">Ryzen Vps India</a></li>
+            <li><a href="#">Website & cPanel</a></li>
+            <li><a href="#">Discord Bot Hosting</a></li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Knowledge Base</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            
+
+          </ul>
+        </div>
+        <div class="link-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Modern Slavery Statement</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="card-b">
+        <div class="loader">
+          <div class="words">
+            <span class="word">Game</span>
+            <span class="word">Bot</span>
+            <span class="word">VPS</span>
+            <span class="word">Server</span>
+            <span class="word">Domains</span>
+          </div>
+          <p>Hostings</p>
+        </div>
+      </div>
+
+      <div class="footer-address">
+        Copyright © 2025 LordCloud. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  
+  
+
+  <script src="Scripts/script.js"></script>
+</body>
+</html>
+
+
